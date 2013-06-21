@@ -1,0 +1,44 @@
+using System;
+using System.Drawing;
+using MonoTouch.Foundation;
+using MonoTouch.UIKit;
+
+namespace PageTest
+{
+	public partial class ScreenLeft : UIViewController
+	{
+		HomeScreen homeScreen;
+		UISwipeGestureRecognizer rightSwipe;
+		public ScreenLeft () : base ("ScreenLeft", null)
+		{
+		}
+
+		public override void DidReceiveMemoryWarning ()
+		{
+			// Releases the view if it doesn't have a superview.
+			base.DidReceiveMemoryWarning ();
+			
+			// Release any cached data, images, etc that aren't in use.
+		}
+
+		public override void ViewDidLoad ()
+		{
+			base.ViewDidLoad ();
+
+			//Right Swipe Gesture
+			rightSwipe = new UISwipeGestureRecognizer ((rg) => {
+				if ((rg.State == UIGestureRecognizerState.Recognized)){
+					if(this.homeScreen == null) {
+						this.homeScreen = new HomeScreen();
+					}
+					this.NavigationController.PushViewController(this.homeScreen, true);
+				} 
+			});		
+
+			//Add Gesture Recongizers
+			this.View.AddGestureRecognizer (rightSwipe);
+
+		}
+	}
+}
+

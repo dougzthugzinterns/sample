@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PageTest/Screens/HomeScreen.cs">
+    <Files>
+      <File FileName="PageTest/AppDelegate.cs" Line="31" Column="4" />
+      <File FileName="PageTest/Screens/HomeScreen.cs" Line="28" Column="52" />
+      <File FileName="PageTest/Screens/ScreenRight.cs" Line="22" Column="3" />
+      <File FileName="PageTest/Screens/ScreenLeft.cs" Line="26" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
